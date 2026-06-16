@@ -72,6 +72,11 @@ img:not(.small-img) {
   transition: var(--transition);
 }
 
+.img-container .card-img {
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
 .img-container:hover {
   background-color: var(--clr-blue5);
 }
@@ -82,11 +87,6 @@ img:not(.small-img) {
 
 .img-container:hover .card-img {
   opacity: 0.5;
-}
-
-.img-container .card-img {
-  border-radius: var(--border-radius);
-  transition: var(--transition);
 }
 
 .title {
@@ -158,7 +158,7 @@ img:not(.small-img) {
   .img-container,
   .view-icon,
   .title,
-  .card-img,
+  .img-container .card-img,
   .author-name {
     transition: none;
   }
