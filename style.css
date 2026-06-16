@@ -84,7 +84,7 @@ img:not(.small-img) {
   opacity: 0.5;
 }
 
-.card-img {
+.img-container .card-img {
   border-radius: var(--border-radius);
   transition: var(--transition);
 }
@@ -109,7 +109,7 @@ img:not(.small-img) {
 .info {
   display: flex;
   justify-content: space-between;
-  font-size: 0.825rem;
+  font-size: clamp(0.8rem, 0.825rem, 0.85rem);
 }
 
 .currency {
@@ -154,6 +154,7 @@ img:not(.small-img) {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .img-container,
   .view-icon,
   .title,
